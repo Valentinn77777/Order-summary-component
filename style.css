@@ -1,0 +1,160 @@
+@font-face {
+    font-family: RedHat;
+    src: url(./fonts/RedHatDisplay-Regular.ttf);
+}
+
+ body {
+    font-family: 'RedHat';
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; background-size: cover;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: rgb(197, 197, 197);
+
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    height: 470px;
+    width: 320px;
+
+    margin: 100px;
+
+    border-radius: 15px;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.card .banner {
+    height: 130px;
+    width: 320px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card .Title {
+    font-size: 25px;
+    font-weight: 500, 700, 900;
+
+    color: hsl(223, 47%, 23%);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding-top: 20px;
+}
+
+.card .Description {
+    width: 250px;
+
+    color: hsl(224, 23%, 55%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.card .Plan{
+    height: 70px;
+    width: 280px;
+
+    background-color: hsl(240, 9%, 96%);
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+    margin-left: 17px;
+}
+
+.Plan .type {
+    font-weight: 500, 700, 900;
+    
+    position: absolute;
+    margin-top: -25px;
+}
+
+.Plan .price {
+    font-size: 16px;
+
+    color: hsl(224, 23%, 55%);
+
+    position: absolute;
+    margin-top: 20px;
+}
+
+.Plan .music_icon {
+    position: absolute;
+    margin-left: -200px;
+}
+
+.Plan .change {
+    border-color: transparent;
+    text-decoration: underline;
+
+    color: hsl(245, 75%, 52%);
+
+    background-color: hsl(240, 9%, 96%);
+
+    position: absolute;
+    margin-left: 190px;
+
+    cursor: pointer;
+}
+
+.card .proceed {
+    color: white;
+
+    background-color: hsl(245, 75%, 52%);
+    border-color: transparent;
+
+    height: 50px;
+    width: 250px;
+
+    border-radius: 10px;
+
+    margin-top: 175px;
+    margin-left: 20px;
+
+    cursor: pointer;
+}
+
+.card .cancel {
+    color: hsl(224, 23%, 55%);
+
+    background-color: transparent;
+
+    border-color: transparent;
+
+    margin-top: 10px;
+    margin-left: 100px;
+
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+}
+}
